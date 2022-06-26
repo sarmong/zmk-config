@@ -19,7 +19,7 @@
       compatible = "zmk,combos";
       combo_conf_layer {
           timeout-ms = <200>;
-          key-positions = <52 57>;
+          key-positions = <51 56>;
           bindings = <&mo 3>;
       };
     };
