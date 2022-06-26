@@ -15,14 +15,14 @@
 #define META    3
 
 / {
-  combos {
-    compatible = "zmk,combos";
-    combo_conf_layer {
-        timeout-ms = <50>;
-        key-positions = <52 57>;
-        bindings = <&mo META>;
-    };
-  };
+  // combos {
+  //   compatible = "zmk,combos";
+  //   combo_conf_layer {
+  //       timeout-ms = <50>;
+  //       key-positions = <52 57>;
+  //       bindings = <&mo META>;
+  //   };
+  // };
 
 	keymap {
 		compatible = "zmk,keymap";
