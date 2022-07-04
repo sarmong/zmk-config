@@ -41,7 +41,7 @@
                 &mt LCTRL ESC  &kp A     &kp S      &kp D       &kp F        &kp G                             &kp H       &kp J        &kp K        &kp L       &kp SEMI     &kp SQT
                 &kp LSHFT      &kp Z     &kp X      &kp C       &kp V        &kp B      &kp LBKT     &kp RBKT  &kp N       &kp M        &kp COMMA    &kp DOT     &kp FSLH     &kp RSHFT
 
-                                                      &mo 2   &mo 1  &kp LGUI   &mt SPACE LSHIFT       &kp RET  &kp LALT   &mo 2   &kp RALT
+                                                      &mo 2   &mo 1  &kp LGUI   &mt LSHIFT SPACE     &kp RET  &kp LALT   &mo 2   &kp RALT
             >;
         };
 
