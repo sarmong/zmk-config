@@ -13,6 +13,7 @@
 #define LOWER   1
 #define RAISE   2
 #define META    3
+#define WIN     4
 
 / {
     combos {
@@ -21,6 +22,13 @@
           timeout-ms = <200>;
           key-positions = <51 56>;
           bindings = <&mo 3>;
+      };
+
+      combo_win_layer {
+          timeout-ms = <200>;
+          key-positions = <51 56 57>;
+          layers = <0 4>;
+          bindings = <&tog 4>;
       };
     };
 
@@ -99,6 +107,25 @@
                                                              &trans        &trans        &trans  &trans  &trans     &trans     &trans           &trans
             >;
         };
+
+        windows_layer {
+            // ------------------------------------------------------------------------------------------------------------
+            // |  ESC      |  1       |  2       |  3        |  4        |  5        |                      |  6        |  7         |  8         |  9        |   0        |   = +      |
+            // |  TAB        |  Q       |  W       |  E        |  R        |  T        |                      |  Y        |  U         |  I         |  O        |   P        |   BSPC     |
+            // |  CTRL       |  A       |  S       |  D        |  F        |  G        |                      |  H        |  J         |  K         |  L        |   ;        |   '        |
+            // |  SHIFT      |  Z       |  X       |  C        |  V        |  B        |   "["  |   |  "]"    |  N        |  M         |  ,         |  .        |   /        |   SHIFT    |
+            //                                                   | RAISE | LOWER | ALT |  SPACE  |   |    ENTER |  SUPER  | RAISE  | RALT   |
+
+            bindings = <
+                &kp ESC        &kp N1    &kp N2     &kp N3      &kp N4       &kp N5                            &kp N6      &kp N7       &kp N8       &kp N9      &kp N0       &kp EQUAL
+                &kp TAB        &kp Q     &kp W      &kp E       &kp R        &kp T                             &kp Y       &kp U        &kp I        &kp O       &kp P        &kp BSPC
+                &kp LCTRL      &kp A     &kp S      &kp D       &kp F        &kp G                             &kp H       &kp J        &kp K        &kp L       &kp SEMI     &kp SQT
+                &kp LSHFT      &kp Z     &kp X      &kp C       &kp V        &kp B      &kp LBKT     &kp RBKT  &kp N       &kp M        &kp COMMA    &kp DOT     &kp FSLH     &kp RSHFT
+
+                                                      &mo 2   &mo 1  &kp LALT   &kp SPACE                 &kp RET  &kp RGUI   &mo 2   &kp RALT
+            >;
+        };
+
     };
 };
 
